@@ -1,0 +1,32 @@
+{
+  "name": "mixpanel",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/wehriam/mixpanel",
+  "author": "John Wehr <johnwehr@gmail.com> (https://github.com/wehriam)",
+  "keywords": [
+    "mixpanel"
+  ],
+  "main": "./mixpanel.js",
+  "engines": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wehriam/mixpanel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wehriam/mixpanel/issues"
+  },
+  "licenses": [{
+    "type": "MIT"
+  }],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp-clean": "latest",
+    "gulp-closure-compiler": "latest"
+  },
+  "scripts": {
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="../vendor/mocha.css" />
+</head>
+<body>
+  <div id="mocha"></div>
+  <div id="test" style="font: 20px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 60px 50px;">
+    <a id="test-link" href="#">Test Link</a>
+    <form id="test-form" method="GET" action="#">
+      <input type="hidden" name="a" value="1" />
+      <button id="test-form-submit" type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="./config.js"></script>
+  <script src="https://cdn.rawgit.com/broofa/node-uuid/master/uuid.js"></script>
+  <script src="https://cdn.rawgit.com/LearnBoost/expect.js/master/index.js"></script>
+  <script src="https://cdn.rawgit.com/visionmedia/mocha/master/mocha.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+  <script src="https://cdn.rawgit.com/moment/moment/develop/moment.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://cdn.mxpnl.com/libs/mixpanel-2.2.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+  mixpanel.init(MIXPANEL_CONFIG.token);
+</script><!-- end Mixpanel -->
+  </script>
+  <script src="./test.mixpanel.js"></script>
+  <script>
+    mixpanel.set_config({loaded: function(){
+      mocha.run();
+    }});
+  </script>
+</body>
+</html>

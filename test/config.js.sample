@@ -1,0 +1,5 @@
+MIXPANEL_CONFIG = {
+  token: "XXX",
+  api_key: "XXX",
+  api_secret: "XXX"
+};

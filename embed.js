@@ -1,0 +1,1 @@
+var supported_methods = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config";
